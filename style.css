@@ -121,8 +121,74 @@ section {
 }
 
 .about {
-    margin : 0 50px;
+    margin : 0 100px;
 }
 
+.row-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 10vh;
+}
+
+.col-img img {
+    width: 170px;
+    margin : 5px 0;
+
+}
+
+.col-img img::after {
+
+}
+.work-img-item {
+    position: relative;
+}
+.work-img-item:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400px;
+    font-size : 15px;
+}
+
+
+.work::before {
+    content: 'Work';
+} 
+
+.col-img {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-areas: "work-1 work-2" "work-3 work3" ;
+}
+
+#work-1 {
+    grid-area : work-1;
+}
+#work-1:hover::after {
+    content: 'Software Engginering';
+}
+#work-2 {
+    grid-area : work-2;
+}
+#work-2:hover::after {
+    content: 'Network Engiinering';
+}
+#work-3 {
+    grid-area : work-3;
+}
+#work-3:hover::after {
+    content: 'Web Programming';
+}
 
 
