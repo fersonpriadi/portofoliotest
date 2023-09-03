@@ -33,10 +33,10 @@
     box-shadow: 1px 1px 1px 2px whitesmoke;
 }
 
-#btn:hover {
-    background-color : wheat ;
+/* #btn:hover {
+    /* background-color : wheat ; */
 
-}
+
 
 .arrow {
     display: flex;
@@ -47,10 +47,10 @@
     margin-bottom : 10vh;
 }
 
-.more-info {
+/* .more-info {
     text-decoration: none;
     color : black;
-}
+} */
 
 .arrow img {
     width: 3vh;
@@ -160,6 +160,13 @@ section {
     font-weight: 400px;
     font-size : 15px;
 }
+.btn-more-info {
+    background-color: grey;
+    color : white;
+    font-size: 15px;
+    border-radius: 20px;
+    
+}
 
 
 .work::before {
@@ -189,6 +196,75 @@ section {
 }
 #work-3:hover::after {
     content: 'Web Programming';
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 10px; */
+    margin-top : 30vh;
+    column-gap: 5px;
+    margin-left : 100px;
+    margin-bottom : 20vh;
+    
+}
+.contact-container p {
+    text-align: center;
+    margin : 0 100px 0 100px;
+}
+
+.contact-img-item img {
+    width: 20px;
+    margin : 0 150px;
+}
+.contact-img-item p {
+    text-align: center;
+}
+
+.contact-img-item {
+    display: flex;
+    margin-top : 40px;
+}
+
+.form-contact {
+    border : 1px solid;
+    width: 40vh;
+    height: 45vh;
+    /* column-gap: 50px; */
+    /* justify-content: center;
+    align-items: center; */
+    box-shadow: 1px 1px 7px 2px rgb(99, 80, 80);
+}
+
+.contact {
+    position : relative;
+}
+.contact::before{
+    content: 'contact';
+}
+.form-detail {
+    margin-right: 20%;
+}
+
+.form-detail-input {
+    padding : 10px;
+    margin : 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-contact-form {
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 20px;
+    margin-top : 10px;
+}
+
+.contact-img-item div a {
+    text-decoration: none;
+    color : black;
 }
 
 
